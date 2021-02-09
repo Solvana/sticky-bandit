@@ -32,8 +32,9 @@ export const StickyCardWrapper = styled.li`
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0,
-  margin: 0,
+  padding: 0;
+  margin: 0;
+  list-style: none;
 `;
 
 const calculateCardListTop = ({ headlineHeight }: StickyProps, baseOffset: BaseStickyTop) => {
@@ -48,9 +49,6 @@ const calculateCardListTop = ({ headlineHeight }: StickyProps, baseOffset: BaseS
 export const CardList = styled.ul<StickyProps>`
   ${StickyCardWrapper} {
     top: ${(p) => calculateCardListTop(p, BaseStickyTop.Mobile)};
-    margin: 0;
-    padding: 0;
-    list-style: none;
 
     @media only screen and (max-width: 900px) {
       top: ${(p: StickyProps) => calculateCardListTop(p, BaseStickyTop.TabletXLarge)};
