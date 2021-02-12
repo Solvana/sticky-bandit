@@ -64,4 +64,5 @@ export const CardList = styled.ul<StickyProps>`
 export const ScrollGroup = styled.div`
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 `;

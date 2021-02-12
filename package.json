@@ -1,6 +1,6 @@
 {
   "name": "@solvana/sticky-bandit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A sticky stack of cards.",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
