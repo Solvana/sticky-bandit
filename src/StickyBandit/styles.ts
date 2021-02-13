@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 enum BaseStickyTop {
   Mobile = '100px',
-  TabletXLarge = '150px',
 }
 
 export const HEADLINE_MARGIN_BOTTOM = 50;
@@ -46,10 +45,6 @@ const calculateCardListTop = ({ headlineHeight }: StickyProps, baseOffset: BaseS
 export const CardList = styled.ul<StickyProps>`
   ${StickyCardWrapper} {
     top: ${(p) => calculateCardListTop(p, BaseStickyTop.Mobile)};
-
-    @media only screen and (max-width: 900px) {
-      top: ${(p: StickyProps) => calculateCardListTop(p, BaseStickyTop.TabletXLarge)};
-    }
   }
 
   // prettier-ignore
