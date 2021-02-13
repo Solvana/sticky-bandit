@@ -15,9 +15,6 @@ type StickyProps = {
 export const StickyHeadlineGroup = styled.div<StickyProps>`
   position: sticky;
   top: ${BaseStickyTop.Mobile};
-  @media only screen and (max-width: 900px) {
-    top: ${BaseStickyTop.TabletXLarge};
-  }
 
   margin-bottom: ${({ headlineHeight }) => {
     const hasHeader = headlineHeight > 0;
